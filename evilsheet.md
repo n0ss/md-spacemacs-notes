@@ -1,225 +1,145 @@
-
-# Table of Contents
-
-1.  [Movements](#org4f03f58)
-    1.  [Arrow keys](#org5cf93f5)
-    2.  [Evil moves](#org379e2f0)
-2.  [Objects](#orga190c39)
-3.  [Formatting commands](#orgd3bc5c5)
-4.  [Deletion](#org5dcd6c9)
-    1.  [Single caracter](#org891451c)
-    2.  [Single word](#orgb264134)
-    3.  [Single line](#orga9f3346)
-5.  [Paste](#org1925e1d)
-6.  [Replace](#org2604dd8)
-    1.  [Character](#org231a8aa)
-    2.  [Word](#org3410d3a)
-    3.  [Replace mode](#orgc78998f)
-7.  [Undos / Redos](#org2c36e85)
-8.  [Moving](#org131f390)
-    1.  [At bottom of buffer](#orgd4e9b01)
-    2.  [At beginning of buffer](#org4f998dd)
-    3.  [At specific line](#org63ff4de)
-9.  [Inserting text](#orgf3c230d)
-    1.  [Characters](#orge8882a7)
-    2.  [Lines](#org5a19b8b)
-    3.  [Append at line](#org022218a)
-10. [Searching / Replacing](#org7bdada8)
-    1.  [Searching in text](#org26af00f)
-    2.  [Replacing](#org4658801)
-    3.  [Matching parenthesis](#orgb6519c9)
-11. [Saving / Inserting files](#org047f6f8)
-    1.  [Current file](#orge4d2ab6)
-    2.  [Current buffer to specific file](#org380acc0)
-    3.  [Specific lines in buffer](#orgbbaf826)
-    4.  [Inserting file in current position](#org908f267)
-12. [Exiting](#org7b6d264)
-    1.  [Saving changes](#org2d6e812)
-    2.  [Without saving](#org7edca87)
+- [Movements](#sec-1)
+  - [Arrow keys](#sec-1-1)
+  - [Evil moves](#sec-1-2)
+- [Objects](#sec-2)
+- [Formatting commands](#sec-3)
+- [Deletion](#sec-4)
+  - [Single caracter](#sec-4-1)
+  - [Single word](#sec-4-2)
+  - [Single line](#sec-4-3)
+- [Paste](#sec-5)
+- [Replace](#sec-6)
+  - [Character](#sec-6-1)
+  - [Word](#sec-6-2)
+  - [Replace mode](#sec-6-3)
+- [Undos / Redos](#sec-7)
+- [Moving](#sec-8)
+  - [At bottom of buffer](#sec-8-1)
+  - [At beginning of buffer](#sec-8-2)
+  - [At specific line](#sec-8-3)
+- [Inserting text](#sec-9)
+  - [Characters](#sec-9-1)
+  - [Lines](#sec-9-2)
+  - [Append at line](#sec-9-3)
+- [Searching / Replacing](#sec-10)
+  - [Searching in text](#sec-10-1)
+  - [Replacing](#sec-10-2)
+  - [Matching parenthesis](#sec-10-3)
+- [Saving / Inserting files](#sec-11)
+  - [Current file](#sec-11-1)
+  - [Current buffer to specific file](#sec-11-2)
+  - [Specific lines in buffer](#sec-11-3)
+  - [Inserting file in current position](#sec-11-4)
+- [Exiting](#sec-12)
+  - [Saving changes](#sec-12-1)
+  - [Without saving](#sec-12-2)
 
 
+# Movements<a id="sec-1"></a>
 
-<a id="org4f03f58"></a>
-
-# Movements
-
-
-<a id="org5cf93f5"></a>
-
-## Arrow keys
+## Arrow keys<a id="sec-1-1"></a>
 
 You can use the arrow keys in Evil mode, it's not the best way but it works :
-<kbd> <left> </kbd>   <kbd> <down> </kbd>   <kbd> <up> </kbd>   <kbd> <right> </kbd> 
 
+<kbd> <left> </kbd> <kbd> <down> </kbd> <kbd> <up> </kbd> <kbd> <right> </kbd>
 
-<a id="org379e2f0"></a>
-
-## Evil moves
+## Evil moves<a id="sec-1-2"></a>
 
 Spacemacs using Evil helps you improve fast movements with these keys :
 
-<kbd> h </kbd>   <kbd> j </kbd>   <kbd> k </kbd>   <kbd> l </kbd> 
+<kbd> h </kbd> <kbd> j </kbd> <kbd> k </kbd> <kbd> l </kbd>
 
-
-<a id="orga190c39"></a>
-
-# Objects
+# Objects<a id="sec-2"></a>
 
 Refer a word using <kbd> w </kbd>
 
 Refer a line using <kbd> $ </kbd>
 
-
-<a id="orgd3bc5c5"></a>
-
-# Formatting commands
+# Formatting commands<a id="sec-3"></a>
 
 Use a command on multiple objects in one row using : [number] [command] [object] OR [command] [number] [object]
+
 Example : <kbd> 5 d w </kbd> deletes five words from cursor
 
+# Deletion<a id="sec-4"></a>
 
-<a id="org5dcd6c9"></a>
+## Single caracter<a id="sec-4-1"></a>
 
-# Deletion
+<kbd> x </kbd>
 
-
-<a id="org891451c"></a>
-
-## Single caracter
-
-<kbd> x </kbd> 
-
-
-<a id="orgb264134"></a>
-
-## Single word
+## Single word<a id="sec-4-2"></a>
 
 <kbd> d w </kbd>
 
+## Single line<a id="sec-4-3"></a>
 
-<a id="orga9f3346"></a>
+<kbd> d $ </kbd> <kbd> d d </kbd>
 
-## Single line
-
-<kbd> d $ </kbd>
-<kbd> d d </kbd>
-
-
-<a id="org1925e1d"></a>
-
-# Paste
+# Paste<a id="sec-5"></a>
 
 <kbd> p </kbd> puts the deleted/copied/cut text after the cursor
 
+# Replace<a id="sec-6"></a>
 
-<a id="org2604dd8"></a>
-
-# Replace
-
-
-<a id="org231a8aa"></a>
-
-## Character
+## Character<a id="sec-6-1"></a>
 
 <kbd> r </kbd> replaces the character under the cursor
 
+## Word<a id="sec-6-2"></a>
 
-<a id="org3410d3a"></a>
+<kbd> c </kbd> replaces the word from the cursor
 
-## Word
-
-<kbd> c </kbd> replaces the word from the cursor 
-
-
-<a id="orgc78998f"></a>
-
-## Replace mode
+## Replace mode<a id="sec-6-3"></a>
 
 <kbd> R </kbd> to enter replace mode until <kbd> <escape> </kbd> is pressed
 
+# Undos / Redos<a id="sec-7"></a>
 
-<a id="org2c36e85"></a>
+Spacemacs remembers your actions to go back in time or move forward again.
 
-# Undos / Redos
+<kbd> u </kbd> to undo last action (keep pressed for multiple) <kbd> C-r </kbd> to redo last action (keep pressed for multiple)
 
-Spacemacs remembers your actions to go back in time or move forward again. 
-<kbd> u </kbd> to undo last action (keep pressed for multiple)
-<kbd> C-r </kbd> to redo last action (keep pressed for multiple) 
+# Moving<a id="sec-8"></a>
 
-
-<a id="org131f390"></a>
-
-# Moving
-
-
-<a id="orgd4e9b01"></a>
-
-## At bottom of buffer
+## At bottom of buffer<a id="sec-8-1"></a>
 
 <kbd> G </kbd>
 
+## At beginning of buffer<a id="sec-8-2"></a>
 
-<a id="org4f998dd"></a>
+<kbd> g g </kbd>
 
-## At beginning of buffer
-
-<kbd> g g </kbd>  
-
-
-<a id="org63ff4de"></a>
-
-## At specific line
+## At specific line<a id="sec-8-3"></a>
 
 <kbd> : </kbd>[number] moves you to line [number]
 
+# Inserting text<a id="sec-9"></a>
 
-<a id="orgf3c230d"></a>
-
-# Inserting text
-
-
-<a id="orge8882a7"></a>
-
-## Characters
+## Characters<a id="sec-9-1"></a>
 
 <kbd> i </kbd> will open edit mode to insert a character before current cursor
 
 <kbd> a </kbd> will open edit mode to insert a character after current cursor
 
-
-<a id="org5a19b8b"></a>
-
-## Lines
+## Lines<a id="sec-9-2"></a>
 
 <kbd> o </kbd> will open edit mode to insert a new line after current cursor
 
 <kbd> O </kbd> will open edit mode to insert a new line before current cursor
 
+## Append at line<a id="sec-9-3"></a>
 
-<a id="org022218a"></a>
+<kbd> A </kbd> to append text to the end of the line
 
-## Append at line
+# Searching / Replacing<a id="sec-10"></a>
 
-<kbd> A </kbd> to append text to the end of the line 
+## Searching in text<a id="sec-10-1"></a>
 
+<kbd> / </kbd> followed by a phrase searches FORWARD in text
 
-<a id="org7bdada8"></a>
+<kbd> ? </kbd> followed by a phrase searches BACKWARD in text
 
-# Searching / Replacing
-
-
-<a id="org26af00f"></a>
-
-## Searching in text
-
-<kbd> / </kbd> followed by a phrase searches FORWARD in text 
-
-<kbd> ? </kbd> followed by a phrase searches BACKWARD in text 
-
-
-<a id="org4658801"></a>
-
-## Replacing
+## Replacing<a id="sec-10-2"></a>
 
 <kbd> : s / OLD / NEW </kbd>
 
@@ -231,63 +151,34 @@ Spacemacs remembers your actions to go back in time or move forward again.
 
 <kbd> : % s / OLD / NEW / g c </kbd>
 
+## Matching parenthesis<a id="sec-10-3"></a>
 
-<a id="orgb6519c9"></a>
+Typing <kbd> % </kbd> while the cursor is on a (,),[,],{, or } locates its matching pair.
 
-## Matching parenthesis
+# Saving / Inserting files<a id="sec-11"></a>
 
-Typing <kbd> % </kbd>  while the cursor is on a  (,),[,],{, or }  locates its
-matching pair.
-
-
-<a id="org047f6f8"></a>
-
-# Saving / Inserting files
-
-
-<a id="orge4d2ab6"></a>
-
-## Current file
+## Current file<a id="sec-11-1"></a>
 
 <kbd> : w </kbd> to save current buffer to file
 
-
-<a id="org380acc0"></a>
-
-## Current buffer to specific file
+## Current buffer to specific file<a id="sec-11-2"></a>
 
 <kbd> : w FILENAME </kbd> to save current buffer to specific FILENAME
 
-
-<a id="orgbbaf826"></a>
-
-## Specific lines in buffer
+## Specific lines in buffer<a id="sec-11-3"></a>
 
 <kbd> : # , # FILENAME </kbd> to save the lines # through # to specific FILENAME
 
-
-<a id="org908f267"></a>
-
-## Inserting file in current position
+## Inserting file in current position<a id="sec-11-4"></a>
 
 <kbd> : r FILENAME </kbd> retrieves file FILENAME and inserts it into buffer at current position
 
+# Exiting<a id="sec-12"></a>
 
-<a id="org7b6d264"></a>
-
-# Exiting
-
-
-<a id="org2d6e812"></a>
-
-## Saving changes
+## Saving changes<a id="sec-12-1"></a>
 
 <kbd> : q a ! </kbd>
 
-
-<a id="org7edca87"></a>
-
-## Without saving
+## Without saving<a id="sec-12-2"></a>
 
 <kbd> : w q a </kbd>
-
