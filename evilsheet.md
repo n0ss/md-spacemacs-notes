@@ -41,7 +41,7 @@
 
 You can use the arrow keys in Evil mode, it's not the best way but it works :
 
-<kbd> left </kbd> <kbd> down </kbd> <kbd> <up> </kbd> <kbd> <right> </kbd>
+<kbd> &leftarrow </kbd> <kbd> &downarrow </kbd> <kbd> <up> </kbd> <kbd> <right> </kbd>
 
 ## Evil moves<a id="sec-1-2"></a>
 
