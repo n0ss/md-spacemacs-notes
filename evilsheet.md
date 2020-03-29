@@ -91,13 +91,15 @@ Example : <kbd> 5 d w </kbd> deletes five words from cursor
 
 ## Replace mode<a id="sec-6-3"></a>
 
-<kbd> R </kbd> to enter replace mode until <kbd> <escape> </kbd> is pressed
+<kbd> R </kbd> to enter replace mode until <kbd> ↲ </kbd> is pressed
 
 # Undos / Redos<a id="sec-7"></a>
 
 Spacemacs remembers your actions to go back in time or move forward again.
 
-<kbd> u </kbd> to undo last action (keep pressed for multiple) <kbd> Ctrl </kbd> + <kbd> R </kbd> to redo last action (keep pressed for multiple)
+<kbd> u </kbd> to undo last action (keep pressed for multiple)
+
+<kbd> Ctrl </kbd> + <kbd> R </kbd> to redo last action (keep pressed for multiple)
 
 # Moving<a id="sec-8"></a>
 
@@ -111,7 +113,7 @@ Spacemacs remembers your actions to go back in time or move forward again.
 
 ## At specific line<a id="sec-8-3"></a>
 
-<kbd> : </kbd>[number] moves you to line [number]
+<kbd> : </kbd>+[number] : moves you to line [number]
 
 # Inserting text<a id="sec-9"></a>
 
