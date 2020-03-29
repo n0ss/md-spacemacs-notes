@@ -141,15 +141,15 @@ Spacemacs remembers your actions to go back in time or move forward again.
 
 ## Replacing<a id="sec-10-2"></a>
 
-<kbd> : s / OLD / NEW </kbd>
+<kbd> : s / OLD / NEW </kbd> To substitute new for the first old on a line type
 
-<kbd> : s / OLD / NEW / g </kbd>
+<kbd> : s / OLD / NEW / g </kbd> To substitute new for all 'old's on a line type
 
-<kbd> : # , # s / OLD / NEW </kbd>
+<kbd> : # , # s / OLD / NEW </kbd> To substitute phrases between two line #'s type
 
-<kbd> : % s / OLD / NEW / g </kbd>
+<kbd> : % s / OLD / NEW / g </kbd> To substitute all occurrences in the file type
 
-<kbd> : % s / OLD / NEW / g c </kbd>
+<kbd> : % s / OLD / NEW / g c </kbd> To ask for confirmation each time add 'c'
 
 ## Matching parenthesis<a id="sec-10-3"></a>
 
