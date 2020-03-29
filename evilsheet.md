@@ -41,7 +41,7 @@
 
 You can use the arrow keys in Evil mode, it's not the best way but it works :
 
-<kbd> <left> </kbd> <kbd> <down> </kbd> <kbd> <up> </kbd> <kbd> <right> </kbd>
+<kbd> left </kbd> <kbd> down </kbd> <kbd> <up> </kbd> <kbd> <right> </kbd>
 
 ## Evil moves<a id="sec-1-2"></a>
 
@@ -97,7 +97,7 @@ Example : <kbd> 5 d w </kbd> deletes five words from cursor
 
 Spacemacs remembers your actions to go back in time or move forward again.
 
-<kbd> u </kbd> to undo last action (keep pressed for multiple) <kbd> C-r </kbd> to redo last action (keep pressed for multiple)
+<kbd> u </kbd> to undo last action (keep pressed for multiple) <kbd> Ctrl </kbd> + <kbd> R </kbd> to redo last action (keep pressed for multiple)
 
 # Moving<a id="sec-8"></a>
 
