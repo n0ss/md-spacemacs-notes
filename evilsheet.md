@@ -91,7 +91,7 @@ Example : <kbd> 5 d w </kbd> deletes five words from cursor
 
 ## Replace mode<a id="sec-6-3"></a>
 
-<kbd> R </kbd> to enter replace mode until <kbd> ↲ </kbd> is pressed
+<kbd> R </kbd> to enter replace mode until <kbd> Esc </kbd> is pressed
 
 # Undos / Redos<a id="sec-7"></a>
 
